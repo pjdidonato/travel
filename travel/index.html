@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+
+  <title>Travel Template</title>
+</head>
+    <body>
+    <main role="main" id="home">
+        <nav class="navbar bg-light navbar-light navbar-expand-sm pb-3 fixed-top ">
+            <!--- Home -->
+           
+            <a class="navbar-brand" href="index.html"><svg width="50px" height="50px"   viewBox="0 0 16 16" class="bi bi-shop" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"/>
+              </svg></a>
+           
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+           
+            <div class="collapse navbar-collapse" id="main-navigation">
+    
+              <ul class="navbar-nav">
+    
+                <li class="nav-item">
+                  <a class="nav-link"  onclick="document.getElementById('profile').style.display='block'" style="width:auto;"><svg width="50px" height="50px" viewBox="0 0 16 16" class="bi bi-file-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M12 1H4a1 1 0 0 0-1 1v10.755S4 11 8 11s5 1.755 5 1.755V2a1 1 0 0 0-1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path fill-rule="evenodd" d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg></a>
+                </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link" onclick="document.getElementById('checkout').style.display='block'" style="width:auto;"><svg width="50px" height="50px" viewBox="0 0 16 16" class="bi bi-handbag-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 0 1 6 0v2h-1V3a2 2 0 0 0-2-2zM5 5H3.361a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.356a2.5 2.5 0 0 0 2.472-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0V5z"/>
+                  </svg></a>
+                </li>
+    
+    
+              </ul>
+    
+            </div>
+    
+            
+    
+            
+          </nav>
+   
+        
+        
+        
+    <header class="header" style="max-width: 100%; max-height: 100%">
+        <div class="popup bg-dark">
+
+            <div class="btnbar text-left">
+                <button class="btn btn-dark py-2" id="fbutton"><i class="fa fa-plane"></i> Flight</button>
+                <button class="btn btn-dark py-2" id="hbutton"><i class="fa fa-bed"></i> Hotel</button>
+                <button class="btn btn-dark py-2" id="cbutton"><i class="fa fa-ambulance"></i> COVID</button>
+                <button class="btn btn-dark py-2" id="wbutton"><i class="fa fa-cloud"></i> Weather</button>
+            </div>
+
+            <div class="container bg-light" id="flight">
+            <h3 class="pt-3 text-left">Travel the world with us</h3>
+                <div class="row">
+                    <section class="col-sm-6 py-3 text-left">
+                    <label>From:</label><input class="form-control" type="text" id="from">
+                    </section>
+                     <section class="col-sm-6 py-3 text-left">
+                    <label>To:</label><input class="form-control" type="text" id="to">
+                    </section>
+                    <section class="col-sm-12 py-3 text-left">
+                    <button class="btn">Search Flight</button>
+                    </section>    
+                </div>
+                
+            </div>
+
+            <div class="container bg-light text-left d-none" id="hotel">
+                <h3 class="pt-2">Find the best hotel.</h3>
+                <p>Book a hotel with us and get the best fares and promotions.</p>
+                <p>We know hotels - we know comfort.</p>
+                <div class="row">
+                <section class="col-sm-12 pb-3 text-left">
+                    <a button class="btn btn-outline-secondary btn-lg" href="Hotel.html">Hotels</button> </a>
+                </section>
+                </div>
+            </div>
+
+            <div class="container bg-light text-left d-none" id="covid">
+            <h3 class="pt-2">COVID Tracker</h3>
+                <p> CDC recommends that travelers avoid all nonessential travel.</p>
+                <div class="row">
+                
+                <section class="col-sm-12 pb-3 text-left">
+                    <a button class="btn btn-outline-secondary btn-lg" href="Hotel.html">Covid</button> </a>
+                </section>
+                </div>
+            </div>
+
+            <div class="container bg-light text-left d-none" id="weather">
+                <h3 class="pt-2"> Weather </h3>
+                    <p> Check the weather for the most popular destinations </p>
+                    <div class="row">
+                    
+                    <section class="col-sm-12 pb-3 text-left">
+                        <a button class="btn btn-outline-secondary btn-lg" href="Hotel.html">Weather</button> </a>
+                    </section>
+                    </div>
+                </div>
+            
+        </div> 
+   
+        
+        
+    </header>
+        
+    
+    <div class="row">
+        <section class="col-sm-12" style="max-width: 100%; max-height: 100%">
+        <footer role="contentinfo">
+         <p class="text-center bg-dark py-4 text-light mb-0"> COVID Travel Search</p>  
+  
+        </footer>  
+
+        </section>   
+   </div>
+        
+       
+      
+         <script src="js/jquery-1.11.2.min.js"></script>     
+        <script src="js/jquery.slim.min.js"></script>
+        <!--<script src="js/popper.min.js"></script>-->
+        <script src="js/bootstrap.min.js"></script>  
+        
+        <script>
+        $(document).ready(function(){
+           $('#fbutton').click(function(e) {
+           e.preventDefault();
+
+
+        $('#flight').css('cssText', 'display: block !important');
+        $('#covid').css('cssText', 'display: none !important');
+        $('#hotel').css('cssText', 'display: none !important');
+        $('#weather').css('cssText', 'display: none !important');
+       
+        
+     
+        });
+            
+           $('#cbutton').click(function(e) {
+           e.preventDefault();
+
+        $('#flight').css('cssText', 'display: none !important');
+        $('#covid').css('cssText', 'display: block !important');
+        $('#hotel').css('cssText', 'display: none !important');
+        $('#weather').css('cssText', 'display: none !important');
+    
+       
+        
+        });
+            
+            $('#wbutton').click(function(e) {
+            e.preventDefault();
+
+        $('#flight').css('cssText', 'display: none !important');
+        $('#covid').css('cssText', 'display: none !important');
+        $('#hotel').css('cssText', 'display: none !important');
+        $('#weather').css('cssText', 'display: block !important');
+        
+ 
+      
+        });
+            $('#hbutton').click(function(e) {
+            e.preventDefault();
+
+        $('#flight').css('cssText', 'display: none !important');
+        $('#covid').css('cssText', 'display: none !important');
+        $('#hotel').css('cssText', 'display: block !important');
+        $('#weather').css('cssText', 'display: none !important');
+     
+ 
+      
+        });
+        
+        });
+        </script>
+
+       
+        <div id="profile" class="modal">
+          
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('profile').style.display='none'" class="close" title="Close Modal">&times;</span>
+              
+            </div>
+        
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+                
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+        
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('profile').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+
+
+        <div id="checkout" class="modal">
+          
+            <div class="row">
+                <div class="col-75">
+                  <div class="container">
+                    <form action="/action_page.php">
+              
+                      <div class="row">
+                        <div class="col-50">
+                          <h3>Billing Address</h3>
+                          <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                          <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                          <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                          <input type="text" id="email" name="email" placeholder="john@example.com">
+                          <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                          <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                          <label for="city"><i class="fa fa-institution"></i> City</label>
+                          <input type="text" id="city" name="city" placeholder="New York">
+              
+                          <div class="row">
+                            <div class="col-50">
+                              <label for="state">State</label>
+                              <input type="text" id="state" name="state" placeholder="NY">
+                            </div>
+                            <div class="col-50">
+                              <label for="zip">Zip</label>
+                              <input type="text" id="zip" name="zip" placeholder="10001">
+                            </div>
+                          </div>
+                        </div>
+              
+                        <div class="col-50">
+                          <h3>Payment</h3>
+                          <label for="fname">Accepted Cards</label>
+                          <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color:navy;"></i>
+                            <i class="fa fa-cc-amex" style="color:blue;"></i>
+                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                            <i class="fa fa-cc-discover" style="color:orange;"></i>
+                          </div>
+                          <label for="cname">Name on Card</label>
+                          <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                          <label for="ccnum">Credit card number</label>
+                          <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                          <label for="expmonth">Exp Month</label>
+                          <input type="text" id="expmonth" name="expmonth" placeholder="September">
+              
+                          <div class="row">
+                            <div class="col-50">
+                              <label for="expyear">Exp Year</label>
+                              <input type="text" id="expyear" name="expyear" placeholder="2018">
+                            </div>
+                            <div class="col-50">
+                              <label for="cvv">CVV</label>
+                              <input type="text" id="cvv" name="cvv" placeholder="352">
+                            </div>
+                          </div>
+                        </div>
+              
+                      </div>
+                      <label>
+                        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                      </label>
+                      <input type="submit" value="Continue to checkout" class="btn">
+                    </form>
+                  </div>
+                </div>
+              
+                <div class="col-25">
+                  <div class="container">
+                    <h4>Cart
+                      <span class="price" style="color:black">
+                        <i class="fa fa-shopping-cart"></i>
+                        <b>4</b>
+                      </span>
+                    </h4>
+                    <p><a href="#">Flight </a> <span class="price">$15</span></p>
+                    <p><a href="#">Hotel</a> <span class="price">$5</span></p>
+                    
+                    <hr>
+                    <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+                    <button type="button" onclick="document.getElementById('checkout').style.display='none'" class="cancelbtn">Cancel</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+     
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+        
+        </main>
+    </body>  
+</html>
